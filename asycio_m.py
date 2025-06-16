@@ -9,6 +9,7 @@ async def fetch_data(delay, id):
 
 #Another coroutine that calls the first coroutine
 async def main():
+    # Creating two coroutine objects
     task1=fetch_data(2,1)
     task2=fetch_data(2,2)
 
