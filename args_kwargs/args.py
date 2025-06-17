@@ -16,4 +16,17 @@ def display_name(*args):
 
 display_name("braison","brian","newton","bonface","elijah")
 
+#kwargs- allows one to pass multiple key word arguments
+def print_adress(**kwargs):
+    for key,value in kwargs.items():
+        print(key,":",value)
+
+print_adress(
+    street='jomo kenyatta',
+    zip='20100',
+    state='nakuru',
+    country='kenya'
+)
+
+
 
