@@ -28,5 +28,22 @@ print_adress(
     country='kenya'
 )
 
+# using both args and kwargs
 
+def shipping_label(*args,**kwargs):
+    for arg in args:
+        print(arg ,end=" ")
+    print("")
+    for key,vlaue in kwargs.items():
+        print(f"{key}:{vlaue}")
+
+
+shipping_label(
+    "Dr","braison","wabwire",
+    country="Kenya",
+    DOB='08/07/2003',
+    age=23,
+    code=20100,
+    street="jomo kenyatta avenue"
+)
 
